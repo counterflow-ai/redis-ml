@@ -3,9 +3,16 @@ ifndef RM_INCLUDE_DIR
 	RM_INCLUDE_DIR=../
 endif
 
-CFLAGS ?= -g -fPIC -O3 -std=gnu99 -Wall -Wno-unused-function
-CFLAGS += -I$(RM_INCLUDE_DIR)
-CC=gcc
+#
+# Uncomment for builds using gcc on Linux and osx
+#CFLAGS ?= -g -fPIC -O3 -std=gnu99 -Wall -Wno-unused-function
+#CFLAGS += -I$(RM_INCLUDE_DIR)
+#CC=gcc
+
+# comment out for builds using gcc on Linux and osx
+CFLAGS ?= -g -fPIC -O3 -Wall -Wno-unused-function
+CFLAGS += -I../
+CC=cc
 
 OBJS=util.o strings.o sds.o vector.o alloc.o periodic.o
 
