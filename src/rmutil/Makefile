@@ -1,7 +1,8 @@
+# Uncomment for builds using gcc on Linux and osx
 # set environment variable RM_INCLUDE_DIR to the location of redismodule.h
-ifndef RM_INCLUDE_DIR
-	RM_INCLUDE_DIR=../
-endif
+#ifndef RM_INCLUDE_DIR
+#	RM_INCLUDE_DIR=../
+#endif
 
 #
 # Uncomment for builds using gcc on Linux and osx
