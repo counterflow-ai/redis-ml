@@ -1,5 +1,7 @@
-CFLAGS = -Wall -g -fPIC -lc -pthread -O2 -std=gnu99
-CC=gcc
+#CFLAGS = -Wall -g -fPIC -lc -pthread -O2 -std=gnu99
+#CC=gcc
+CFLAGS = -Wall -g -fPIC -lc -pthread -O2 
+CC=cc
 
 OBJS=../forest.o ../feature-vec.o ../util/logging.o ../util/thpool.o
 
