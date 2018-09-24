@@ -11,7 +11,7 @@
 #CC=gcc
 
 # comment out for builds using gcc on Linux and osx
-CFLAGS ?= -g -fPIC -O3 -Wall -Wno-unused-function
+CFLAGS += -g -fPIC -O3 -Wall -Wno-unused-function
 CFLAGS += -I../
 CC=cc
 
@@ -23,7 +23,7 @@ clean:
 	rm -rf *.o *.a
 
 librmutil.a: $(OBJS)
-	ar rcs $@ $^
+	ar rcs $@ $(OBJS)
 
 test_vector: test_vector.o vector.o
 	$(CC) -Wall -o $@ $^ -lc -lpthread -O0
