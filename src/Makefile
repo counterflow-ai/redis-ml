@@ -34,6 +34,7 @@
 
 SHOBJ_CFLAGS ?=  -fno-common -g 
 SHOBJ_LDFLAGS ?= -L/usr/local/lib -shared -Bsymbolic -l:libopenblas.a
+RMUTIL_LIBDIR ?= ./rmutil
 
 CFLAGS = -I. -I/usr/local/include -Wall -g -fPIC -O2 -pthread 
 CC=cc
